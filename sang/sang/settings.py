@@ -77,10 +77,25 @@ WSGI_APPLICATION = 'sang.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u622734756_dondesang',
+        'HOST': 'm-dad.com',
+        'PORT': 3306,
+        'USER': 'u622734756_seydou',
+        'PASSWORD': 'Fer60153982@',
+        'OPTIONS': {
+            'connect_timeout': 120,
+            'sql_mode': 'STRICT_TRANS_TABLES',
+        },
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 # Password validation

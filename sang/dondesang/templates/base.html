@@ -67,29 +67,29 @@
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="/">Dashboard</a></li>
-                      <li><a href="#">Dashboard2</a></li>
+                      <li><a href="{% url 'home2' %}">Dashboard2</a></li>
                     </ul>
                   </li>
                   <li><a><i class="#"></i> Config <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Pays</a></li>
-                      <li><a href="#">Region</a></li>
-                      <li><a href="#">Ville</a></li>
-                      <li><a href="#">Zone</a></li>
-                      <li><a href="#">Afficher Config</a></li>
+                      <li><a href="{% url 'ad-pays' %}">Pays</a></li>
+                      <li><a href="{% url 'ad-region' %}">Region</a></li>
+                      <li><a href="{% url 'ad-ville' %}">Ville</a></li>
+                      <li><a href="{% url 'affzone' %}">Zone</a></li>
+                      <li><a href="{% url 'affcong' %}">Afficher Config</a></li>
                     </ul>
                   </li>
                   <li><a><i class="#"></i> Collects <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Nouveau Collect</a></li>
-                      <li><a href="#">Afficher Collect</a></li>
+                      <li><a href="{% url 'collects' %}">Nouveau Collect</a></li>
+                      <li><a href="{% url 'affcol' %}">Afficher Collect</a></li>
                     </ul>
                   </li>
-                  <li><a href="#"><i class="#"></i> Don <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="{% url 'don' %}"><i class="#"></i> Don <span class="fa fa-chevron-down"></span></a>
                   <li><a><i class="#"></i> Donneur <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Nouveau Donneur</a></li>
-                      <li><a href="#">Afficher Donneur</a></li>
+                      <li><a href="{% url 'donneurs' %}">Nouveau Donneur</a></li>
+                      <li><a href="{% url 'details' %}">Afficher Donneur</a></li>
                     </ul>
                   </li>
                 </ul>
